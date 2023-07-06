@@ -1,0 +1,102 @@
+:root {
+    --background: linear-gradient(#24292F 0%, #15181D 100%);
+    --second-background: linear-gradient(#32353E 10%, #252A30 100%);
+    --color: #d6d6d6;
+    --color-primary: linear-gradient(#15778D 0%, #024555 100%);
+    --color-secondary: linear-gradient(#126578 0%, #023e4d 100%);
+}
+
+body.dark {
+    background: var(--background);
+    color: var(--color);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    direction: ltr;
+    color: var(--color);
+    font-family: "Montserrat Alternates",'Markazi Text' , 'Seguoe UI';
+}
+
+html {
+    font-size: 100%;
+}
+
+input,
+button {
+    font: inherit;
+}
+
+#theme-switcher {
+    width: 32px;
+    height: 32px;
+}
+
+header {
+    display: flex;
+    background: var(--color-primary);
+    flex-direction: row;
+    align-items: center;
+    align-content: space-around;
+}
+
+header>h1 {
+    font-size: 3.5rem;
+    text-align: center;
+}
+
+.search-box>label {
+    color: var(--color);
+}
+
+#getInfo {
+    background: var(--color-primary);
+    border: 0px;
+    border-radius: 12px;
+    width: auto;
+    height: auto;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+#getInfo:hover {
+    background: var(--color-secondary);
+}
+
+#city {
+    color: var(--color);
+    border-radius: 12px;
+    border: 1px solid #126578;
+    background: transparent;
+    width: auto;
+    height: auto;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    padding-left: 1rem;
+}
+
+.results {
+    display: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-grow: 2;
+    height: auto;
+    padding: .5rem;
+    fill: transparent;
+    border: transparent;
+}
+
+#card {
+    width: calc(50% - 2rem);
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    padding: 1rem;
+    margin: 1rem;
+    background: var(--second-background);
+    color: var(--color);
+}
