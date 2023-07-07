@@ -28,11 +28,6 @@ button {
     font: inherit;
 }
 
-#theme-switcher {
-    width: 32px;
-    height: 32px;
-}
-
 header {
     display: flex;
     background: var(--color-primary);
@@ -46,8 +41,10 @@ header>h1 {
     text-align: center;
 }
 
-.search-box>label {
-    color: var(--color);
+.search-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #getInfo {
@@ -99,4 +96,39 @@ header>h1 {
     margin: 1rem;
     background: var(--second-background);
     color: var(--color);
+}
+
+
+@media screen and (max-width: 768px) {
+    .results {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #card {
+        width: calc(100% - 2rem);
+        margin: .5rem;
+    }
+
+    #city {
+        width: calc(66% - 1rem);
+    }
+
+    #getInfo {
+        width: calc(33% - 1rem);
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    html {
+        font-size: 130%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    html {
+        font-size: 85%;
+    }
 }
