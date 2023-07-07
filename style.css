@@ -20,6 +20,8 @@ html {
 
 body {
     background: var(--background);
+    background-color: #15181D;
+    background-repeat: no-repeat;
 }
 
 input,
@@ -35,10 +37,11 @@ header>h1 {
     font-size: 3.5rem;
 }
 
-.search-box {
+.search-bar {
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: .5rem;
 }
 
 #getInfo {
@@ -95,7 +98,6 @@ header>h1 {
 
 @media screen and (max-width: 768px) {
     .results {
-        display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
